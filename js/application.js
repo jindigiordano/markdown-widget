@@ -1,13 +1,9 @@
 $(document).ready(function(){
 
-  $("textarea").on("keyup", function() {
-    $("#preview").html($("textarea").val());
-  })
-
+  $("textarea").on("keyup", transform);
 });
 
 
-
-// $( "#target" ).keyup(function() {
-//   alert( "Handler for .keyup() called." );
-// });
+function transform() {
+  $("#preview").html($("textarea").val());
+}
