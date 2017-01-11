@@ -6,18 +6,21 @@ $(document).ready(function(){
 
 function transform() {
   var input = $("textarea").val();
+  var output = input;
   //regex
   var italic1 = /[*].+[*]/;
   var italic2 = /[_].+[_]/;
   var bold = /[*]{2}.+[*]{2}/;
 
+  var italics = input.match(italic1);
 
-  // var matches = input.match(italic)
-  // matches.addClass("italic");
 
-  $("#preview").html("<span>" + input + "</span>");
+  if (italics !== null) {
+    output = input.replace(/[*].+[*]/, "<span class = 'italic'>" + italics[0].slice(1, -1) + "</span>");
+  }
 
-  $("span").addClass("italic");
+  $("#preview").html(output);
+
 }
 
 
