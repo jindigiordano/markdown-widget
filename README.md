@@ -1,6 +1,6 @@
 # Markdown Widget Challenge
 
-A "live" markdown preview widget in JavaScript using Object Oriented JavaScript. 
+A "live" markdown preview widget in JavaScript. 
 Assignment from Phase 3 Dev Bootcamp.
 
 ## Usage
